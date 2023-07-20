@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+
+<body>
+    <h1>Currency Exchange!</h1>
+    <h3>Example format for currency input: EUR, INR, GBP, USD, etc</h3>
+    <p>{{ amount }} {{ currency1 }} = {{ conversion_result }} {{ currency2 }}</p>
+    <form action="/currency">
+        <label>Base Currency</label><input type="text" name="currency1" id="currency1" placeholder="base currency" required>
+        <label>Target Currency</label><input type="text" name="currency2" id="currency2" placeholder="target currency" required>
+        <label>Amount</label><input type="text" name="amount" id="amount" placeholder="amount" required>
+        <br><button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
